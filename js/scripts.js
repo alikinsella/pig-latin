@@ -1,8 +1,10 @@
 // back end logic
 var vowels = ["a", "e", "i", "o", "u", "y"]
 var pigLatin = function(word) {
-    if (word.length === 1 && vowels.includes(word.slice(0))) {
-       return word.concat("way");
+    if (vowels.includes(word.slice(0)) && word.length === 1) {
+      return word.concat("way");
+    } else if (vowels.includes(word.slice(0,1)) && word.length >= 2) {
+      return word.concat("ay");
     } else {
       return word
     }
