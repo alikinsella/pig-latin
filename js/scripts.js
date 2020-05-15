@@ -3,14 +3,13 @@ var vowels = ["a", "e", "i", "o", "u", "y"]
 var pigLatin = function(word) {
   if (typeof word !== "string") {
     return false
-  }
+  }};
   
 //   if (word.slice(0) === )
   
 //   var wordSplit = input.split("");
 //   if ("a", || "e", || "i", || "o", || "u")
 // }; 
-
 
 
 
@@ -26,3 +25,4 @@ $(document).ready(function() {
     $("#result").show();
   });
 });
+
