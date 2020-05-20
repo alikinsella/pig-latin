@@ -5,6 +5,12 @@ var pigLatin = function(word) {
       return word.concat("way");
     } else if (vowels.includes(word.slice(0,1)) && word.length >= 2) {
       return word.concat("ay");
+    } else if (!(vowels.includes(word.slice(0,1))) && vowels.includes(word.slice(1,2))) {
+      return word.slice(1).concat(word.slice(0,1) + "ay");
+    } else if (!(vowels.includes(word.slice(0,2))) && vowels.includes(word.slice(2,3))) {
+        return word.slice(2).concat(word.slice(0,2) + "ay");
+    } else if (!(vowels.includes(word.slice(0,3))) && vowels.includes(word.slice(3,4))) {
+      return word.slice(3).concat(word.slice(0,3) + "ay");
     } else {
       return word
     }
@@ -12,13 +18,6 @@ var pigLatin = function(word) {
 
 
 
-  // for (let vowels = 0; vowels <= 2; vowels += 1) {
-
-//   if (word.slice(0) === )
-  
-//   var wordSplit = input.split("");
-//   if ("a", || "e", || "i", || "o", || "u")
-// }; 
 
 // front end logic
 
